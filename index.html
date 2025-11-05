@@ -1,75 +1,121 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的個人網站</title>
+    <title>My Personal Website</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            text-align: center;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px 0;
-        }
-        main {
-            padding: 20px;
-        }
-        .profile-img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            margin: 20px 0;
-        }
-        .intro {
-            font-size: 18px;
+            background: #f4f4f4;
             color: #333;
         }
-        .about-me {
-            font-size: 16px;
-            color: #555;
-            max-width: 600px;
-            margin: 0 auto;
-            line-height: 1.6;
+
+        header {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
         }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .profile-img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            margin-left: 30px;
+            max-width: 600px;
+        }
+
+        .content h2 {
+            color: #222;
+        }
+
+        .content p {
+            color: #555;
+            font-size: 16px;
+        }
+
+        .btn {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .pdf-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .pdf-links li {
+            margin: 10px 0;
+        }
+
         footer {
-            background-color: #333;
+            background-color: #222;
             color: white;
             padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>歡迎來到我的個人網站</h1>
+        <h1>Welcome to My Personal Website</h1>
     </header>
-    
-    <main>
-        <img src="your-photo.jpg" alt="我的照片" class="profile-img">
-        <h2>你好，我是[你的名字]</h2>
-        <p class="intro">這是一個簡單的個人網站範本。在這裡你可以了解我更多的資訊。</p>
-        <p class="intro">我是一位專業的醫生，專注於[你的專業領域，如內科、外科等]，並且致力於改善患者的健康和生活品質。</p>
 
-        <div class="about-me">
-            <h3>自我介紹</h3>
-            <p>你好，我是[你的名字]，來自[你的城市或地區]，目前是一名[你的專業領域]醫生。自從開始我的醫學事業以來，我一直致力於幫助病人改善健康狀況，並與他們建立互信的關係。</p>
-            <p>作為一名醫生，我不僅重視病人的生理健康，還關心他們的心理健康。我相信每一位病人都是獨特的，因此我會針對每位病人的情況，提供量身訂做的醫療方案。</p>
-            <p>在閒暇時間，我熱衷於[列舉你的興趣，如：運動、閱讀、參與醫學研究等]。我也經常參加各類醫學研討會，保持對醫學領域的最新發展和技術的了解。</p>
-            <p>我的目標是持續提升專業技能，並為社會貢獻我的醫療專長，幫助更多的人過上健康、幸福的生活。</p>
+    <div class="container">
+        <!-- Personal Image -->
+        <img src="myphoto.jpg" alt="My Photo" class="profile-img">
+
+        <!-- Content Section -->
+        <div class="content">
+            <h2>How Vlogging Changed My Life</h2>
+            <p>Welcome! I am Emily Silver, and vlogging has opened up a new world for me. It has not only helped me connect with people around the globe, but it also allowed me to grow creatively and personally.</p>
+
+            <a href="your-video-link-here" class="btn">Play Video</a>
         </div>
-    </main>
+    </div>
+
+    <!-- PDF Works Section -->
+    <div class="pdf-section">
+        <h2>My Works</h2>
+        <p>Here are some of the PDFs of my recent work:</p>
+        <ul class="pdf-links">
+            <li><a href="work1.pdf" target="_blank">Work 1 - PDF</a></li>
+            <li><a href="work2.pdf" target="_blank">Work 2 - PDF</a></li>
+            <li><a href="work3.pdf" target="_blank">Work 3 - PDF</a></li>
+        </ul>
+    </div>
 
     <footer>
-        <p>&copy; 2025 [你的名字] | 版權所有</p>
+        <p>&copy; 2025 Emily Silver. All rights reserved.</p>
     </footer>
 </body>
 </html>
